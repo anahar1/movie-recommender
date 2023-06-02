@@ -56,6 +56,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .home-button {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    transform: scale(1.1);
+  }
+  
   
   .movie-card img {
     width: 100%;

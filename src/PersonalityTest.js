@@ -210,7 +210,7 @@ const PersonalityTest = ({ onSubmit }) => {
 
 // Function to fetch movies
 const fetchMovies = async (mostSelectedGenre, secondMostSelectedGenre) => {
-  const apiKey = '6825b254d0d78d91c8b18db5a8c9c31a'; // Replace with your TMDb API key
+  const apiKey = process.env.REACT_APP_API; // Replace with your TMDb API key
   try {
     const response = await fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreMap[mostSelectedGenre]},${genreMap[secondMostSelectedGenre]}`

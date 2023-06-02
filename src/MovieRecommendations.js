@@ -27,8 +27,8 @@ const MovieRecommendations = ({ recommendations }) => {
         ))}
       </div>
       <div className="button-container">
-        <button
-          className="btn btn-primary text-lg font-bold text-white py-2 px-4 rounded"
+      <button
+          className="btn btn-primary text-lg font-bold text-white py-2 px-4 rounded home-button"
           style={{ backgroundColor: '#333', color: '#fff' }}
           onClick={() => window.location.reload()}
         >
